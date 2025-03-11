@@ -13,14 +13,14 @@ const startAnimation = {
 }
 
 const reverseSteps = (index)=>{
-  const totalSteps = 9
+  const totalSteps = 6
   return totalSteps - index - 1
 }
 
 const Stairs = () => {
   return (
     <>
-    {[...Array(9)].map((_,index)=>{
+    {[...Array(6)].map((_,index)=>{
       return (
       <motion.div key={index} initial="initial" animate="animate" variants={startAnimation} exit="exit" transition={{
         duration:0.4,
